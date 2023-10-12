@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.master-without-topnav')
 
 @section('title') @lang('translation.Single_Dashboard') @endsection
 
@@ -140,7 +140,7 @@
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" data-bs-toggle="tab" href="#full_data" role="tab">Full Date</a>
+                                <a class="nav-link active" data-bs-toggle="tab" href="#full_data" role="tab">Full Data</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#alerts" role="tab">Alerts</a>
