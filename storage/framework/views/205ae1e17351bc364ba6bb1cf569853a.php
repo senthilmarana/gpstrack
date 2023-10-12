@@ -1,16 +1,14 @@
-@extends('layouts.master')
-
-@section('title') @lang('translation.Dashboards') @endsection
-@section('css')
+<?php $__env->startSection('title'); ?> <?php echo app('translator')->get('translation.Dashboards'); ?> <?php $__env->stopSection(); ?>
+<?php $__env->startSection('css'); ?>
     <!-- leaflet Css -->
-    <link href="{{ URL::asset('build/libs/leaflet/leaflet.css') }}" rel="stylesheet" type="text/css" />
-@endsection
-@section('content')
+    <link href="<?php echo e(URL::asset('build/libs/leaflet/leaflet.css')); ?>" rel="stylesheet" type="text/css" />
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
 
-@component('components.breadcrumb')
-    @slot('li_1') Dashboards @endslot
-    @slot('title') Dashboard @endslot
-@endcomponent
+<?php $__env->startComponent('components.breadcrumb'); ?>
+    <?php $__env->slot('li_1'); ?> Dashboards <?php $__env->endSlot(); ?>
+    <?php $__env->slot('title'); ?> Dashboard <?php $__env->endSlot(); ?>
+<?php echo $__env->renderComponent(); ?>
 
 <div class="row">
 
@@ -188,7 +186,7 @@
                             <tr>
                                 <th scope="row">
                                     <div>
-                                        <img src="{{ URL::asset('build/images/product/img-7.png') }}" alt="" class="avatar-sm">
+                                        <img src="<?php echo e(URL::asset('build/images/product/img-7.png')); ?>" alt="" class="avatar-sm">
                                     </div>
                                 </th>
                                 <td>
@@ -202,7 +200,7 @@
                             <tr>
                                 <th scope="row">
                                     <div>
-                                        <img src="{{ URL::asset('build/images/product/img-4.png') }}" alt="" class="avatar-sm">
+                                        <img src="<?php echo e(URL::asset('build/images/product/img-4.png')); ?>" alt="" class="avatar-sm">
                                     </div>
                                 </th>
                                 <td>
@@ -288,17 +286,17 @@
 </div>-->
 <!-- end modal -->
 
-@endsection
-@section('script')
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
 <!-- apexcharts -->
-<script src="{{ URL::asset('build/libs/apexcharts/apexcharts.min.js') }}"></script>
+<script src="<?php echo e(URL::asset('build/libs/apexcharts/apexcharts.min.js')); ?>"></script>
 
 <!-- leaflet plugin -->
-<script src="{{ URL::asset('build/libs/leaflet/leaflet.js') }}"></script>
+<script src="<?php echo e(URL::asset('build/libs/leaflet/leaflet.js')); ?>"></script>
 
 <!-- leaflet map.init -->
-<script src="{{ URL::asset('build/js/pages/leaflet-us-states.js') }}"></script>
-<script src="{{ URL::asset('build/js/pages/leaflet-map.init.js') }}"></script>
+<script src="<?php echo e(URL::asset('build/js/pages/leaflet-us-states.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/js/pages/leaflet-map.init.js')); ?>"></script>
 
 <script>
     //Pie Chart
@@ -333,6 +331,8 @@
     };
     (chart = new ApexCharts(document.querySelector("#pie_chart"), options)).render();
     </script>
-@endsection
+<?php $__env->stopSection(); ?>
 
 
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\xampp\htdocs\gpstrack\resources\views/index.blade.php ENDPATH**/ ?>

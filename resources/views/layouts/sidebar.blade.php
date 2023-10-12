@@ -11,20 +11,24 @@
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class="bx bx-home-circle"></i>
-                        <span key="t-dashboards">@lang('translation.Dashboards')</span>
+                        <i class="bx bx-home"></i>
+                        <span key="t-dashboard">Dashboard</span>
                     </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="/" key="t-multi-dashboard">Multi Dashboard</a></li>
+                        <li><a href="single_dashboard" key="t-single-dashboard">Single Dashboard</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="{{url('admin/users') }}" class="waves-effect">
+                    <a href="users" class="has-arrow waves-effect">
                         <i class="bx bx-user"></i>
-                        <span key="t-users">Users</span>
+                        <span key="t-users">@lang('translation.Users')</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{url('admin/vehicles') }}" class="waves-effect">
+                    <a href="vehicles" class="has-arrow waves-effect">
                         <i class="bx bx-car"></i>
-                        <span key="t-vehicles">Vehicles</span>
+                        <span key="t-vehicles">@lang('translation.Vehicles')</span>
                     </a>
                 </li>
                 <li>
@@ -46,7 +50,7 @@
                     @csrf
                 </form>
                 </li>
-
+<!--
                 <li>
                     <a href="javascript: void(0);" class="waves-effect">
                     <span class="badge rounded-pill bg-danger float-end" key="t-hot">@lang('translation.hot')</span>
@@ -455,7 +459,7 @@
                             </ul>
                         </li>
                     </ul>
-                </li>
+                </li>-->
 
             </ul>
         </div>

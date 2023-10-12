@@ -10,7 +10,7 @@ File: leaflet init js
 
 
 // leaflet-map
-var mymap = L.map('leaflet-map').setView([51.505, -0.09], 13);
+/* var mymap = L.map('leaflet-map').setView([51.505, -0.09], 13);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
     maxZoom: 18,
@@ -20,11 +20,11 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1
-}).addTo(mymap);
+}).addTo(mymap); */
 
 
 // leaflet-map-marker
-var markermap = L.map('leaflet-map-marker').setView([51.505, -0.09], 13);
+/* var markermap = L.map('leaflet-map-marker').setView([51.505, -0.09], 13);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
     maxZoom: 18,
@@ -52,11 +52,11 @@ L.polygon([
 ],{
     color: '#556ee6',
     fillColor: '#556ee6',
-}).addTo(markermap);
+}).addTo(markermap); */
 
 
 // Working with popups
-var popupmap = L.map('leaflet-map-popup').setView([51.505, -0.09], 13);
+/* var popupmap = L.map('leaflet-map-popup').setView([51.505, -0.09], 13);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
     maxZoom: 18,
@@ -86,7 +86,7 @@ L.polygon([
     fillColor: '#556ee6',
 }).addTo(popupmap).bindPopup("I am a polygon.");
 
-var popup = L.popup();
+var popup = L.popup(); */
 
 
 // leaflet-map-custom-icons
@@ -112,7 +112,7 @@ L.marker([51.5, -0.09], {icon: greenIcon}).addTo(customiconsmap);
 
 // Interactive Choropleth Map
 
-var interactivemap = L.map('leaflet-map-interactive-map').setView([37.8, -96], 4);
+/* var interactivemap = L.map('leaflet-map-interactive-map').setView([37.8, -96], 4);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
     maxZoom: 18,
@@ -149,12 +149,12 @@ function style(feature) {
 
 var geojson = L.geoJson(statesData, {
     style: style,
-}).addTo(interactivemap);
+}).addTo(interactivemap); */
 
 // leaflet-map-group-control
 
 
-var cities = L.layerGroup();
+/* var cities = L.layerGroup();
 
 L.marker([39.61, -105.02]).bindPopup('This is Littleton, CO.').addTo(cities),
 L.marker([39.74, -104.99]).bindPopup('This is Denver, CO.').addTo(cities),
@@ -185,4 +185,4 @@ var overlays = {
     "Cities": cities
 };
 
-L.control.layers(baseLayers, overlays).addTo(layergroupcontrolmap);
+L.control.layers(baseLayers, overlays).addTo(layergroupcontrolmap); */

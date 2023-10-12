@@ -177,7 +177,7 @@ return [
   "Edit_Details" => "Edit Details",
   "Placeholders" => "Placeholders",
   "Toasts" => "Toasts",
-  
+
   "Jobs" => "Jobs",
   "Job_List" => "Job List",
   "Job_Grid" => "Job Grid",
@@ -190,5 +190,10 @@ return [
   "Utilities" => "Utilities",
   "hot" => "Hot",
   "backend" => "Backend",
-  "yajra-datatable" => "Yajra Datatable"
+  "yajra-datatable" => "Yajra Datatable",
+
+  "Users" => "Users",
+  "Vehicles" => "Vehicles",
+  "Single_Dashboard" => "Single Dashboard"
+
 ];

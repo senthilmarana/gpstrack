@@ -223,7 +223,7 @@
             <div class="card-body">
                 <h4 class="card-title mb-4">Sales Analytics</h4>
 
-                <div> 
+                <div>
                     <div id="donut-chart" data-colors='["--bs-primary", "--bs-success", "--bs-danger"]' class="apex-charts"></div>
                 </div>
 
