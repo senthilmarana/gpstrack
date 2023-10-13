@@ -5140,3 +5140,8 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
 .jobs-categories a:hover {
 	color: #556ee6
 }
+
+.mmi-active {
+	color: #556ee6 !important;
+	font-weight:bold;
+}

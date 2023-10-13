@@ -37,11 +37,9 @@
                         <span key="t-reports">Reports</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="reports" key="t-ireport">Idle Report</a></li>
-                        <li><a href="#" key="t-product-detail">Parking Report</a></li>
-                        <li><a href="#" key="t-orders">Playback Report</a></li>
-                        <li><a href="#" key="t-customers">Key On/Off Report</a></li>
-                        <li><a href="#" key="t-cart">Distance Report</a></li>
+                        <li><a href="reports" key="t-ireport">Generic Reports</a></li>
+                        <li><a href="#" key="t-product-detail">Executive Report</a></li>
+                        <li><a href="#" key="t-orders">Smart Report</a></li>
                     </ul>
                 </li>
                 <li>
