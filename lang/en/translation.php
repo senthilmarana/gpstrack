@@ -194,6 +194,7 @@ return [
 
   "Users" => "Users",
   "Vehicles" => "Vehicles",
-  "Single_Dashboard" => "Single Dashboard"
+  "Single_Dashboard" => "Single Dashboard",
+  "Reports" => "Reports"
 
 ];

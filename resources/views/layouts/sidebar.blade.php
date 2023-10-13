@@ -34,10 +34,10 @@
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="bx bx-file"></i>
-                        <span key="t-layouts">Reports</span>
+                        <span key="t-reports">Reports</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="#" key="t-products">Idle Report</a></li>
+                        <li><a href="reports" key="t-ireport">Idle Report</a></li>
                         <li><a href="#" key="t-product-detail">Parking Report</a></li>
                         <li><a href="#" key="t-orders">Playback Report</a></li>
                         <li><a href="#" key="t-customers">Key On/Off Report</a></li>
