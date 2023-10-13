@@ -34,14 +34,21 @@
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="bx bx-file"></i>
-                        <span key="t-layouts">Reports</span>
+                        <span key="t-multi-level">Reports</span>
                     </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="#" key="t-products">Idle Report</a></li>
-                        <li><a href="#" key="t-product-detail">Parking Report</a></li>
-                        <li><a href="#" key="t-orders">Playback Report</a></li>
-                        <li><a href="#" key="t-customers">Key On/Off Report</a></li>
-                        <li><a href="#" key="t-cart">Distance Report</a></li>
+                    <ul class="sub-menu" aria-expanded="true">
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow" key="t-level-1-1">Generic Reports</a>
+                            <ul class="sub-menu" aria-expanded="true">
+                                <li><a href="idle-reports" key="t-level-1-2">Idle Report</a></li>
+                                <li><a href="parking-reports" key="t-level-1-3">Parking Report</a></li>
+                                <li><a href="javascript: void(0);" key="t-level-1-3">Playback Report</a></li>
+                                <li><a href="javascript: void(0);" key="t-level-1-3">Key On/Off Report</a></li>
+                                <li><a href="javascript: void(0);" key="t-level-1-3">Distance Report</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript: void(0);" class="has-arrow" key="t-level-1-2">Executive Report</a></li>
+                        <li><a href="javascript: void(0);" class="has-arrow" key="t-level-1-2">Smart Report</a></li>
                     </ul>
                 </li>
                 <li>

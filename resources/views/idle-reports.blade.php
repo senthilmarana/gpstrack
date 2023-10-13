@@ -91,7 +91,7 @@
 
                 <div class="col-lg-9">
 
-                    <div class="row">
+                            <div class="row">
 
                                         <div class="card">
                                             <div class="card-body">
@@ -623,9 +623,9 @@
 <!-- Buttons examples -->
 <script src="{{ URL::asset('build/libs/datatables.net-buttons/js/dataTables.buttons.min.js') }}"></script>
 <script src="{{ URL::asset('build/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js') }}"></script>
-<script src="{{ URL::asset('build/libs/jszip/jszip.min.js') }}"></script>
+<!--<script src="{{ URL::asset('build/libs/jszip/jszip.min.js') }}"></script>
 <script src="{{ URL::asset('build/libs/pdfmakebuild/pdfmake.min.js') }}"></script>
-<script src="{{ URL::asset('build/libs/pdfmakebuild/vfs_fonts.js') }}"></script>
+<script src="{{ URL::asset('build/libs/pdfmakebuild/vfs_fonts.js') }}"></script>-->
 <script src="{{ URL::asset('build/libs/datatables.net-buttons/js/buttons.html5.min.js') }}"></script>
 <script src="{{ URL::asset('build/libs/datatables.net-buttons/js/buttons.print.min.js') }}"></script>
 <script src="{{ URL::asset('build/libs/datatables.net-buttons/js/buttons.colVis.min.js') }}"></script>

@@ -4231,7 +4231,11 @@ fieldset:disabled .btn {
 
 .nav-link {
 	display: block;
-	padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+	/*padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);*/
+	padding-left:8px;
+	padding-right:5px;
+	padding-top:8px;
+	padding-bottom:8px;
 	font-size: var(--bs-nav-link-font-size);
 	font-weight: var(--bs-nav-link-font-weight);
 	color: var(--bs-nav-link-color);
@@ -15207,7 +15211,8 @@ a {
 }
 
 .nav-tabs-custom .nav-item .nav-link {
-	border: none
+	/*border: none*/
+	border: 1px solid #f0f0f0;
 }
 
 .nav-tabs-custom .nav-item .nav-link:after {
@@ -15223,7 +15228,9 @@ a {
 }
 
 .nav-tabs-custom .nav-item .nav-link.active {
-	color: #556ee6
+	/*color: #556ee6 */
+	color: #ffffff;
+	background:#556ee6;
 }
 
 .nav-tabs-custom .nav-item .nav-link.active:after {

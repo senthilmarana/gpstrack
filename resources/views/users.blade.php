@@ -35,16 +35,92 @@
     <div class="row">
         <div class="col-12">
 
-                    <!-- right offcanvas -->
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header">
-                          <h5 id="offcanvasRightLabel">Offcanvas Right</h5>
-                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                          ...
-                        </div>
+            <!-- right offcanvas -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Create User</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="row">
+
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="formrow-inputState" class="form-label">Role</label>
+                                                    <select id="formrow-inputState" class="form-select">
+                                                        <option selected="">Select...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="formrow-email-input" class="form-label">Name</label>
+                                                    <input type="text" class="form-control" id="formrow-name-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="formrow-email-input" class="form-label">Email</label>
+                                                    <input type="email" class="form-control" id="formrow-email-input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="formrow-password-input" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="formrow-password-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="formrow-password-input" class="form-label">Confirm Password</label>
+                                                    <input type="password" class="form-control" id="formrow-password-input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="formrow-email-input" class="form-label">Mobile</label>
+                                                    <input type="text" class="form-control" id="formrow-name-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="formrow-inputState" class="form-label">Country</label>
+                                                    <select id="formrow-inputState" class="form-select">
+                                                        <option selected="">Select...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-3">
+                                                    <label for="formrow-email-input" class="form-label">Address</label>
+                                                    <textarea id="textarea" class="form-control" maxlength="225" rows="3" placeholder="This textarea has a limit of 225 chars."></textarea>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div>
+                                            <button type="submit" class="btn btn-primary w-md">Submit</button>
+                                        </div>
+                                    </form>
+
                     </div>
+                </div>
+            </div>
 
 
             <div class="card">
@@ -536,9 +612,9 @@
     <!-- Buttons examples -->
     <script src="{{ URL::asset('build/libs/datatables.net-buttons/js/dataTables.buttons.min.js') }}"></script>
     <script src="{{ URL::asset('build/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js') }}"></script>
-    <script src="{{ URL::asset('build/libs/jszip/jszip.min.js') }}"></script>
+    <!--<script src="{{ URL::asset('build/libs/jszip/jszip.min.js') }}"></script>
     <script src="{{ URL::asset('build/libs/pdfmakebuild/pdfmake.min.js') }}"></script>
-    <script src="{{ URL::asset('build/libs/pdfmakebuild/vfs_fonts.js') }}"></script>
+    <script src="{{ URL::asset('build/libs/pdfmakebuild/vfs_fonts.js') }}"></script>-->
     <script src="{{ URL::asset('build/libs/datatables.net-buttons/js/buttons.html5.min.js') }}"></script>
     <script src="{{ URL::asset('build/libs/datatables.net-buttons/js/buttons.print.min.js') }}"></script>
     <script src="{{ URL::asset('build/libs/datatables.net-buttons/js/buttons.colVis.min.js') }}"></script>

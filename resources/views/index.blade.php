@@ -309,7 +309,7 @@
     },
     series: [635, 2, 16, 7, 610, 10],
     labels: ["All Vehicles", "Moving", "Idle", "Parking", "No Data", "Expired"],
-    colors: ["#34c38f", "#556ee6", "#f46a6a", "#50a5f1", "#f1b44c", "#e83e8c"],
+    colors: ["#556ee6", "#34c38f", "#50a5f1", "#f1b44c", "#f46a6a", "#e83e8c"],
     legend: {
         show: !0,
         position: "bottom",
