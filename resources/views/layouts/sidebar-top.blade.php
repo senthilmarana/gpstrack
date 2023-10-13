@@ -33,6 +33,22 @@
                 </li>
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-data"></i>
+                        <span key="t-stock">Stock</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="javascript: void(0);" key="t-device">Device</a></li>
+                        <li><a href="javascript: void(0);" key="t-sim">Sim</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-layer"></i>
+                        <span key="t-licence">Licence</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="bx bx-file"></i>
                         <span key="t-multi-level">Reports</span>
                     </a>
