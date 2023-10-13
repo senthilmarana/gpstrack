@@ -202,21 +202,48 @@
                         <div class="tab-content p-3">
                             <div class="tab-pane active" id="full_data" role="tabpanel">
                                 <div class="table-responsive">
-                                    <table class="table table-hover" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                    <table class="table table-nowrap align-middle mb-0" style="font-size:11px;">
                                             <tr>
-                                                <td>HR 26 D 5506</td>
-                                                <td>10 KMPH</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td style="padding-right:20px;background:#fafafa;"><b>Vehicel Details</b></td>
+                                                <td style="padding-right:20px;"><b>KM status</b></td>
+                                                <td style="padding-right:20px;background:#fafafa;"><b>Fuel Details</b></td>
+                                                <td style="padding-right:20px;"><b>Temperaure Details</b></td>
+                                                <td style="padding-right:20px;background:#fafafa;"><b>Hour Meter Details</b></td>
+                                                <td style="padding-right:20px;"><b>Voltage DEtails</b></td>
+                                                <td style="padding-right:20px;background:#fafafa;"><b>Device Status</b></td>
                                             </tr>
                                             <tr>
-                                                <td>HR 26 D 5506</td>
-                                                <td>100 KMPH</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td style="padding-right:20px;background:#fafafa;" valign="top"><p>Vehicle Number:</p>
+                                                    <p>Vehicle Status:</p>
+                                                    <p>AC Status:</p>
+                                                    <p>Odometer: </p>
+                                                </td>
+                                                <td style="padding-right:20px;" valign="top"><p>Today KM:</p>
+                                                    <p>Keyon/off KM:</p>
+                                                </td>
+                                                <td style="padding-right:20px;background:#fafafa;" valign="top"><p>Fuel in Tank1:</p>
+                                                    <p>Fuel in Tank2:</p>
+                                                    <p>DTE:</p>
+                                                </td>
+                                                <td style="padding-right:20px;" valign="top"><p>Temperature 1:</p>
+                                                    <p>Humidity 1:</p>
+                                                    <p>Temperature 2:</p>
+                                                    <p>Humidity 2:</p>
+                                                </td>
+                                                <td style="padding-right:20px;background:#fafafa;" valign="top"><p>RPM:</p>
+                                                    <p>Hour Meter:</p>
+                                                    <p>Today Hours:</p>
+                                                </td>
+                                                <td style="padding-right:20px;" valign="top"><p>Vehicle Battery Voltage:</p>
+                                                    <p>Devicce Battery Voltage:</p>
+                                                    <p>Devicce Battery Percentage:</p>
+                                                </td>
+                                                <td style="padding-right:20px;background:#fafafa;" valign="top"><p>GSM Status:</p>
+                                                    <p>GPS status:</p>
+                                                    <p>GPS Satellite:</p>
+                                                </td>
                                             </tr>
+
                                     </table>
                                 </div>
                             </div>
@@ -259,5 +286,15 @@
     <script src="{{ URL::asset('build/libs/datatables.net-responsive/js/dataTables.responsive.min.js') }}"></script>
     <script src="{{ URL::asset('build/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js') }}"></script>
     <!-- Datatable init js -->
-    <script src="{{ URL::asset('build/js/pages/datatables.init.js') }}"></script>
+    <!--<script src="{{ URL::asset('build/js/pages/datatables.init.js') }}"></script>-->
+    <script>
+    $(document).ready(function() {
+        $('#datatable').dataTable({
+        "bLengthChange": false,
+        "pageLength" : 5,
+        "bFilter": true,
+        "bInfo": false,
+        "bAutoWidth": false });
+    });
+    </script>
 @endsection

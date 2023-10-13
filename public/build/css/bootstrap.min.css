@@ -77,7 +77,7 @@
 	--bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 	--bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
 	--bs-body-font-family: var(--bs-font-sans-serif);
-	--bs-body-font-size: .8125rem;
+	--bs-body-font-size: .8000rem;
 	--bs-body-font-weight: 400;
 	--bs-body-line-height: 1.5;
 	--bs-body-color: #495057;
@@ -235,7 +235,7 @@ h1,
 
 h1,
 .h1 {
-	font-size: calc(1.328125rem + .9375vw)
+	font-size: calc(1.328000rem + .9375vw)
 }
 
 @media (min-width: 1200px) {
@@ -284,7 +284,7 @@ h5,
 
 h6,
 .h6 {
-	font-size: .8125rem
+	font-size: .8000rem
 }
 
 p {
@@ -2399,7 +2399,7 @@ progress {
 	display: block;
 	width: 100%;
 	padding: .47rem .75rem;
-	font-size: .8125rem;
+	font-size: .8000rem;
 	font-weight: 400;
 	line-height: 1.5;
 	color: var(--bs-emphasis-color);
@@ -2574,7 +2574,7 @@ textarea.form-control-lg {
 	display: block;
 	width: 100%;
 	padding: .47rem 1.75rem .47rem .75rem;
-	font-size: .8125rem;
+	font-size: .8000rem;
 	font-weight: 400;
 	line-height: 1.5;
 	color: var(--bs-emphasis-color);
@@ -3039,7 +3039,7 @@ textarea.form-control-lg {
 	display: flex;
 	align-items: center;
 	padding: .47rem .75rem;
-	font-size: .8125rem;
+	font-size: .8000rem;
 	font-weight: 400;
 	line-height: 1.5;
 	color: var(--bs-emphasis-color);
@@ -3327,7 +3327,7 @@ textarea.form-control.is-invalid {
 	--bs-btn-padding-x: .75rem;
 	--bs-btn-padding-y: .47rem;
 	--bs-btn-font-family: ;
-	--bs-btn-font-size: .8125rem;
+	--bs-btn-font-size: .8000rem;
 	--bs-btn-font-weight: 400;
 	--bs-btn-line-height: 1.5;
 	--bs-btn-color: var(--bs-body-color);
@@ -3830,7 +3830,7 @@ fieldset:disabled .btn {
 	--bs-dropdown-padding-x: 0;
 	--bs-dropdown-padding-y: .5rem;
 	--bs-dropdown-spacer: .125rem;
-	--bs-dropdown-font-size: .8125rem;
+	--bs-dropdown-font-size: .8000rem;
 	--bs-dropdown-color: var(--bs-body-color);
 	--bs-dropdown-bg: var(--bs-secondary-bg);
 	--bs-dropdown-border-color: var(--bs-border-color);
@@ -5116,7 +5116,7 @@ fieldset:disabled .btn {
 	align-items: center;
 	width: 100%;
 	padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-	font-size: .8125rem;
+	font-size: .8000rem;
 	color: var(--bs-accordion-btn-color);
 	text-align: left;
 	background-color: var(--bs-accordion-btn-bg);
@@ -5280,7 +5280,7 @@ fieldset:disabled .btn {
 .pagination {
 	--bs-pagination-padding-x: .75rem;
 	--bs-pagination-padding-y: .5rem;
-	--bs-pagination-font-size: .8125rem;
+	--bs-pagination-font-size: .8000rem;
 	--bs-pagination-color: var(--bs-secondary-color);
 	--bs-pagination-bg: var(--bs-secondary-bg);
 	--bs-pagination-border-width: var(--bs-border-width);
@@ -6551,7 +6551,7 @@ fieldset:disabled .btn {
 	--bs-popover-box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .2);
 	--bs-popover-header-padding-x: 1rem;
 	--bs-popover-header-padding-y: .5rem;
-	--bs-popover-header-font-size: .8125rem;
+	--bs-popover-header-font-size: .8000rem;
 	--bs-popover-header-color: inherit;
 	--bs-popover-header-bg: var(--bs-secondary-bg);
 	--bs-popover-body-padding-x: 1rem;
@@ -9370,7 +9370,7 @@ fieldset:disabled .btn {
 }
 
 .fs-1 {
-	font-size: calc(1.328125rem + .9375vw) !important
+	font-size: calc(1.328000rem + .9375vw) !important
 }
 
 .fs-2 {
@@ -9390,7 +9390,7 @@ fieldset:disabled .btn {
 }
 
 .fs-6 {
-	font-size: .8125rem !important
+	font-size: .8000rem !important
 }
 
 .fst-italic {

@@ -29,38 +29,69 @@
 @section('content')
 
 @component('components.breadcrumb')
-    @slot('li_1') Reports @endslot
-    @slot('title') Generic Reports @endslot
+    @slot('li_1') Generic Reports @endslot
+    @slot('title') Idle Reports @endslot
 @endcomponent
 
 <div class="row">
-
     <div class="col-xl-12">
 
         <div class="row">
             <div class="col-lg-3">
                 <div class="card">
-                    <div class="card-body">
-
-                        <div>
-                            <ul class="list-unstyled product-list">
-                                <li><a href="javascript: void(0);" class="mmi-active"><i class="mdi mdi-chevron-right me-1"></i> Idle Report</a></li>
-                                <li><a href="javascript: void(0);"><i class="mdi mdi-chevron-right me-1"></i> Parking Report</a></li>
-                                <li><a href="javascript: void(0);"><i class="mdi mdi-chevron-right me-1"></i> Playback Report</a></li>
-                                <li><a href="javascript: void(0);"><i class="mdi mdi-chevron-right me-1"></i> Key On/Off Report</a></li>
-                                <li><a href="javascript: void(0);"><i class="mdi mdi-chevron-right me-1"></i> Distance Report</a></li>
-
-                            </ul>
+                        <div class="card-body">
+                           <form>
+                                <div class="mb-3">
+                                    <select class="form-select" id="inlineFormSelectPref">
+                                        <option selected="">Admin</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" id="inlineFormSelectPref">
+                                        <option selected="">Distributor</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" id="inlineFormSelectPref">
+                                        <option selected="">Dealer</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" id="inlineFormSelectPref">
+                                        <option selected="">Sub Dealer</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" id="inlineFormSelectPref">
+                                        <option selected="">Customer</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn btn-primary w-md">Submit</button>
+                                </div>
+                            </form>
                         </div>
-
                     </div>
                 </div>
 
-            </div>
+                <div class="col-lg-9">
 
-                            <div class="col-lg-9">
-
-                                <div class="row">
+                    <div class="row">
 
                                         <div class="card">
                                             <div class="card-body">
@@ -92,20 +123,6 @@
 
                                 </div>
                                 <div class="row">
-                                    <div class="col-12">
-
-                                                <!-- right offcanvas -->
-                                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                                    <div class="offcanvas-header">
-                                                      <h5 id="offcanvasRightLabel">Offcanvas Right</h5>
-                                                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="offcanvas-body">
-                                                      ...
-                                                    </div>
-                                                </div>
-
-
                                         <div class="card">
                                             <div class="card-body">
 
@@ -584,7 +601,7 @@
 
                                             </div>
                                         </div>
-                                    </div> <!-- end col -->
+
                                 </div> <!-- end row -->
 
                             </div>
