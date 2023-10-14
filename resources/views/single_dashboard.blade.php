@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.master_fullwidth')
 
 @section('title') @lang('translation.Single_Dashboard') @endsection
 
@@ -18,30 +18,34 @@
 @endsection
 
 @section('content')
-
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="card">
-                <div class="card-body">
+<style>
+    .dataTables_Filter{
+        float: left;
+    }
+</style>
+    <div class="row" style="padding:0px;">
+        <div class="col-lg-3" style="padding:0px;">
+            <div class="card" style="padding:0px;">
+                <div class="card-body" style="padding:0px;">
                         <!-- Nav tabs -->
-                        <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
+                        <ul class="nav nav-tabs nav-tabs-custom nav-justified" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" data-bs-toggle="tab" href="#all" role="tab">All</a>
+                                <a style="background:#d9ecd9;color:#50b850;" class="nav-link active" data-bs-toggle="tab" href="#all" role="tab">15 <br> All</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#moving" role="tab">Moving</a>
+                                <a style="background:#d9d9ff;color:#0000ff;" class="nav-link" data-bs-toggle="tab" href="#moving" role="tab">3 <br> Moving</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#idle" role="tab">Idle</a>
+                                <a style="background:#fff6da;color:#d4a51b;" class="nav-link" data-bs-toggle="tab" href="#idle" role="tab">2 <br> Idle</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#parking" role="tab">Parking</a>
+                                <a style="background:#ffd9d9;color:#ff1c1c;" class="nav-link" data-bs-toggle="tab" href="#parking" role="tab">1 <br> Parking</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#nodata" role="tab">No Data</a>
+                                <a style="background:#ead0f1;color:#b943d6;" class="nav-link" data-bs-toggle="tab" href="#nodata" role="tab">0 <br> No Data</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#inactive" role="tab">Inactive</a>
+                                <a style="background:#d9d9d9;color:#737070;" class="nav-link" data-bs-toggle="tab" href="#inactive" role="tab">9 <br> Inactive</a>
                             </li>
                         </ul>
 
@@ -49,7 +53,7 @@
                         <div class="tab-content p-3">
                             <div class="tab-pane active" id="all" role="tabpanel">
                                 <div class="table-responsive">
-                                    <table id="datatable" class="table table-bordered dt-responsive  nowrap w-100">
+                                    <table id="datatable" class="table table-bordered dt-responsive nowrap w-100">
                                         <thead>
                                             <tr>
                                                 <th>One</th>
@@ -116,16 +120,17 @@
                     </div>
             </div>
         </div>
-        <div class="col-lg-8">
-            <div class="card">
-                <div class="card-body">
+        <div class="col-lg-9" style="padding:2px 2px 2px 3px ;margin-bottom:0px;">
+            <div class="card" style="padding:0px;margin-bottom:0px;">
+                <div class="card-body" style="padding:0px;">
                     <div id="leaflet-map-custom-icons" class="leaflet-map"></div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-body">
+            <div class="card" style="padding:0px;">
+                <div class="card-body" style="padding:0px;">
                         <!-- Nav tabs -->
-                        <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
+
+                        <ul class="nav nav-pills nav-justified" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-bs-toggle="tab" href="#full_data" role="tab">Full Data</a>
                             </li>
@@ -138,7 +143,7 @@
                         </ul>
 
                         <!-- Tab panes -->
-                        <div class="tab-content p-3">
+                        <div class="tab-content" style="padding:0px;">
                             <div class="tab-pane active" id="full_data" role="tabpanel">
                                 <div class="table-responsive">
                                     <table class="table table-nowrap align-middle mb-0" style="font-size:11px;">
@@ -227,13 +232,40 @@
     <!-- Datatable init js -->
     <!--<script src="{{ URL::asset('build/js/pages/datatables.init.js') }}"></script>-->
     <script>
-    $(document).ready(function() {
         $('#datatable').dataTable({
+        "ordering": true,               // Allows ordering
+        "searching": true,              // Searchbox
+        "paging": true,                 // Pagination
+        "info": false,                  // Shows 'Showing X of X' information
+        "pagingType": 'simple_numbers', // Shows Previous, page numbers & next buttons only
         "bLengthChange": false,
         "pageLength" : 5,
-        "bFilter": true,
-        "bInfo": false,
-        "bAutoWidth": false });
+
+        "columnDefs": [
+            {
+                "targets": 'dialPlanButtons',
+                "searchable": false,    // Stops search in the fields
+                "sorting": false,       // Stops sorting
+                "orderable": false      // Stops ordering
+            }
+        ],
+        "dom": '<"top"f>rt<"bottom"lp><"clear">', // Positions table elements
+        "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]], // Sets up the amount of records to display
+        "language": {
+            "search": "_INPUT_",            // Removes the 'Search' field label
+            "searchPlaceholder": "Search"   // Placeholder for the search box
+        },
+        "search": {
+            "addClass": 'form-control input-lg col-xs-12'
+        },
+        "fnDrawCallback":function(){
+            $("input[type='search']").attr("id", "searchBox");
+            $('#dialPlanListTable').css('cssText', "margin-top: 0px !important;");
+            $("select[name='dialPlanListTable_length'], #searchBox").removeClass("input-sm");
+            $('#searchBox').css("width", "200px").focus();
+            $('#dialPlanListTable_filter').removeClass('dataTables_filter');
+        }
     });
+
     </script>
 @endsection
