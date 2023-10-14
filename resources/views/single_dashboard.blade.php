@@ -1,4 +1,4 @@
-@extends('layouts.master-without-topnav')
+@extends('layouts.master')
 
 @section('title') @lang('translation.Single_Dashboard') @endsection
 
@@ -18,67 +18,6 @@
 @endsection
 
 @section('content')
-<div class="row">
-    <div class="col-lg-12">
-        <div class="card">
-            <div class="card-body">
-                <form class="row row-cols-lg-auto g-3 align-items-center">
-                    <div class="col-12">
-                        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                        <select class="form-select" id="inlineFormSelectPref">
-                            <option selected="">Admin</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                        <select class="form-select" id="inlineFormSelectPref">
-                            <option selected="">Distributor</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                        <select class="form-select" id="inlineFormSelectPref">
-                            <option selected="">Dealer</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                        <select class="form-select" id="inlineFormSelectPref">
-                            <option selected="">Sub Dealer</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                        <select class="form-select" id="inlineFormSelectPref">
-                            <option selected="">Customer</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary w-md">Submit</button>
-                    </div>
-                </form>
-            </div>
-            <!-- end card body -->
-        </div>
-        <!-- end card -->
-    </div>
-    <!-- end col -->
-</div>
 
     <div class="row">
         <div class="col-lg-4">

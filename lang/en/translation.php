@@ -195,6 +195,7 @@ return [
   "Users" => "Users",
   "Vehicles" => "Vehicles",
   "Single_Dashboard" => "Single Dashboard",
-  "Reports" => "Reports"
+  "Reports" => "Reports",
+  "Change_Password" => "Change Password"
 
 ];

@@ -1,4 +1,4 @@
-@extends('layouts.master-without-topnav')
+@extends('layouts.master')
 
 @section('title') @lang('translation.Reports') @endsection
 
@@ -28,73 +28,17 @@
 
 @section('content')
 
-<div class="row">
-    <div class="col-lg-12">
-        <div class="card">
-            <div class="card-body">
-                <form class="row row-cols-lg-auto g-3 align-items-center">
-                    <div class="col-12">
-                        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                        <select class="form-select" id="inlineFormSelectPref">
-                            <option selected="">Admin</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                        <select class="form-select" id="inlineFormSelectPref">
-                            <option selected="">Distributor</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                        <select class="form-select" id="inlineFormSelectPref">
-                            <option selected="">Dealer</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                        <select class="form-select" id="inlineFormSelectPref">
-                            <option selected="">Sub Dealer</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                        <select class="form-select" id="inlineFormSelectPref">
-                            <option selected="">Customer</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary w-md">Submit</button>
-                    </div>
-                </form>
-            </div>
-            <!-- end card body -->
-        </div>
-        <!-- end card -->
-    </div>
-    <!-- end col -->
-</div>
+@component('components.breadcrumb')
+    @slot('li_1') Generic Reports @endslot
+    @slot('title') Parking Report @endslot
+@endcomponent
 
 <div class="row">
     <div class="col-lg-12">
     <div class="card">
         <div class="card-body">
-            <form class="row row-cols-lg-auto g-3 align-items-center">
+            <form class="row row-cols-lg-auto g-3 align-items-center" style="float:right;">
+                <div class="col-lg-4"></div>
                 <div class="col-lg-4">
                     <div class="input-daterange input-group" id="datepicker6" data-date-format="dd M, yyyy"
                     data-date-autoclose="true" data-provide="datepicker" data-date-container='#datepicker6'>
@@ -102,7 +46,7 @@
                     <input type="text" class="form-control" name="end" placeholder="End Date" />
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-2">
                     <select class="form-select" id="inlineFormSelectPref">
                         <option selected="">Vehicles</option>
                         <option value="1">One</option>
@@ -111,7 +55,7 @@
                     </select>
                 </div>
 
-                <div class="col-lg-5">
+                <div class="col-lg-2">
                     <button type="submit" class="btn btn-primary w-md">Submit</button>
                 </div>
             </form>

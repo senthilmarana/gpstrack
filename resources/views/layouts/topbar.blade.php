@@ -164,9 +164,65 @@
 
             </div>
         </div>-->
+        <div class="row" style="padding-top:20px;">
+            <div class="col-lg-12">
+                        <form class="row row-cols-lg-auto g-3 align-items-center">
+                            <div class="col-12">
+                                <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                                <select class="form-select" id="inlineFormSelectPref">
+                                    <option selected="">Admin</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                                <select class="form-select" id="inlineFormSelectPref">
+                                    <option selected="">Distributor</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                                <select class="form-select" id="inlineFormSelectPref">
+                                    <option selected="">Dealer</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                                <select class="form-select" id="inlineFormSelectPref">
+                                    <option selected="">Sub Dealer</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                                <select class="form-select" id="inlineFormSelectPref">
+                                    <option selected="">Customer</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                           <!-- <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-md">Submit</button>
+                            </div>-->
+                        </form>
+            </div>
+            <!-- end col -->
+        </div>
     </div>
 
     <div class="d-flex">
+
         <!--
         <div class="button-items" style="margin-right:30px;margin-top:15px;">
             <a href="single_dashboard"><button style="width:150px;" type="button" class="btn btn-success waves-effect btn-label waves-light"><i class="bx bx-check-double label-icon"></i> Dashboard</button></a>
@@ -291,13 +347,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <div class="dropdown d-none d-lg-inline-block ms-1">
             <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
                 <i class="bx bx-fullscreen"></i>
             </button>
-        </div>-->
+        </div>
         <div class="dropdown d-inline-block">
             <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -384,7 +440,7 @@
                 </div>
             </div>
         </div>
-<!--
+
         <div class="dropdown d-inline-block">
             <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -394,23 +450,22 @@
                 <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
             </button>
             <div class="dropdown-menu dropdown-menu-end">
-
-               <a class="dropdown-item" href="contacts-profile"><i class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">@lang('translation.Profile')</span></a>
-                <a class="dropdown-item" href="#"><i class="bx bx-wallet font-size-16 align-middle me-1"></i> <span key="t-my-wallet">@lang('translation.My_Wallet')</span></a>
-                <a class="dropdown-item d-block" href="#" data-bs-toggle="modal" data-bs-target=".change-password"><i class="bx bx-wrench font-size-16 align-middle me-1"></i> <span key="t-settings">@lang('translation.Settings')</span></a>
+                <!--<a class="dropdown-item" href="contacts-profile"><i class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">@lang('translation.Profile')</span></a>
                 <a class="dropdown-item" href="#"><i class="bx bx-lock-open font-size-16 align-middle me-1"></i> <span key="t-lock-screen">@lang('translation.Lock_screen')</span></a>
+                <a class="dropdown-item" href="#"><i class="bx bx-wallet font-size-16 align-middle me-1"></i> <span key="t-my-wallet">@lang('translation.My_Wallet')</span></a>-->
+                <a class="dropdown-item d-block" href="#" data-bs-toggle="modal" data-bs-target=".change-password"><i class="bx bx-wrench font-size-16 align-middle me-1"></i> <span key="t-settings">@lang('translation.Change_Password')</span></a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item text-danger" href="javascript:void();" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span key="t-logout">@lang('translation.Logout')</span></a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
                 </form>
             </div>
-        </div>-->
+        </div>
         <!--<div class="dropdown d-inline-block">
             <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
                 <i class="bx bx-cog bx-spin"></i>
-            </button>
-        </div>-->
+            </button>-->
+        </div>
     </div>
 </div>
 </header>
